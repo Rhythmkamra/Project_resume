@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hello.css">
+    <script type="text/javascript">
+        
+    function callvalue() {
+        
+        var name=document.getElementById("uname").value;
+        var email=document.getElementById("email").value;   
+        var mobile=document.getElementById("mob").value;
+        document.writeln("YOUR INFO: <br>"+"Name:"+name+"<br>");
+        document.writeln("Your Email: "+email +"<br>" );
+        document.writeln("Your mobile no: "+mobile );
+       
+       
+        }
+        
+    </script>
+</head>
+<body>
+    <form onsubmit="callvalue()">
+        <h1>REGISTRATION FORM</h1>
+        <label>Username</label><br>
+        <input type="text" placeholder="himank" id="uname"><br><br>
+        <label>email</label><br>
+        <input type="email" placeholder="name@mail.com" id="email"><br><br>
+        <label>Mobile number</label><br>
+        <input type="number" placeholder="9115628099" id="mob"><br><br>
+
+        <input type="submit" value="register">
+        
+    </form>
+</body>
+</html>
